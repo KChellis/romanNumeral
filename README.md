@@ -1,3 +1,14 @@
+# _Roman Numeral Converter_
+
+#### _Page that converts between decimal and roman numerals_
+
+#### By _**Kristen Chellis and Nick Kardish**_
+
+## Description
+
+_This page can take input as either a roman numeral and convert to a decimal number, or a decimal number and convert to a roman numeral._
+
+## Specs
 convert to roman numerals
 -convert 1-3
   example input: 1
@@ -69,3 +80,27 @@ convert roman numerals to decimal
 -convert other special cases
   example input: XL
   example output: 40      
+
+## Setup/Installation Requirements
+
+* _Clone this repository to your computer_
+* _Open index.html in browser_
+
+
+## Known Bugs
+
+_A user could input a numeral that is not actually a roman numeral, however, if an actual roman numeral is entered it will convert correctly_
+
+## Support and contact details
+
+_If you have any questions comments or concerns contact Kristen at peanutster@gmail.com or Nick at kardish515@gmail.com_
+
+## Technologies Used
+
+_HTML, CSS, JavaScript, jQuery, and Bootstrap_
+
+### License
+
+*This page is licensed under the MIT license*
+
+Copyright (c) 2018 **_Kristen Chellis and Nick Kardish_**
