@@ -1,8 +1,8 @@
 function romanNumeral(number) {
   var reverse = ""
-  for (var i = (number.length-1); i >= 0; i--) {
-    reverse += number[i];
-  }
+    for (var i = (number.length-1); i >= 0; i--) {
+      reverse += number[i];
+    }
   var numeral = ""
   if (reverse[3]){
     for (var i = 0; i < parseInt(reverse[3]); i++) {
@@ -109,9 +109,15 @@ $(document).ready(function(){
   $("#form2").submit(function(event){
     event.preventDefault();
     var numeral = $("#number2").val();
+    numeral= numeral.toUpperCase();
     var result = decimal(numeral);
-    $(".result").show();
-    $("#result").prepend("<li>" + numeral + " is " + result + "</li>");
+    if (/[^IVXLCDM]/.test(numeral)) {
+      alert("Please enter Roman Numeral");
+    }else{
+      $(".result").show();
+      $("#result").prepend("<li>" + numeral + " is " + result + "</li>");
+    }
+
   });
   $("#clear").click(function() {
     location.reload();
